@@ -127,6 +127,24 @@
     print_r($numbers);
     ?>
 
+    <?php
+    echo "<hr/> <h1>Array Map</h1><br/>";
+    //TODO: Array Map & In_Array
+    $data = [
+        ["id" => 1, "name" => "Alice", "roles" => ["admin", "editor"]],
+        ["id" => 2, "name" => "Bob", "roles" => ["editor"]],
+        ["id" => 3, "name" => "Charlie", "roles" => ["viewer", "editor"]],
+    ];
+
+    $roleToCheck = "editor";
+
+    $result = array_map(function ($item) use ($roleToCheck) {
+        return in_array($roleToCheck, $item['roles']);
+    }, $data);
+
+    print_r($result);
+    ?>
+
 </body>
 
 </html>
