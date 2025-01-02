@@ -122,7 +122,7 @@
 
     //* Mengurutkan array
     echo "<br/>Mengurutkan Elemen<br/>";
-    sort($numbers); // asc
+    sort(array: $numbers); // asc
     // rsort($numbers); // desc
     print_r($numbers);
     ?>
