@@ -9,10 +9,17 @@
 </head>
 
 <body>
+    <?php
+
+    ?>
 </body>
 
+
+
+<?= "STRING" ?>
 <?php
 $angka = 10;
+echo "TEST"; // print
 
 if ($angka >= 0) {
     // statement
@@ -52,6 +59,11 @@ switch ($variable) {
         break;
 }
 
+?>
+
+<?php
+// TODO: Ternary Operator
+$result = $nilai == 80 ? true : false;
 ?>
 
 </html>
